@@ -4,6 +4,9 @@ import type { NextRequest } from "next/server"
 
 export function middleware(request: NextRequest) {
 
+  
+  return NextResponse.next(); // ✅ ensures valid route handling
+
   // return NextResponse.redirect(new URL('/feed', request.url))
   // return NextResponse.next()
   // const token = null
